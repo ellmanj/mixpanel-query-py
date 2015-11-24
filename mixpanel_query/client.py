@@ -352,7 +352,7 @@ class MixpanelQueryClient(object):
 
     def get_funnel_detail(
             self, funnel_id, start_date=None, end_date=None,
-            length=14, interval=1, unit=UNIT_DAY, on=None, where=None, limit=None,
+            length=None, interval=None, unit=None, on=None, where=None, limit=None,
             response_format=FORMAT_JSON):
         """
         Get data for a specified funnel.
